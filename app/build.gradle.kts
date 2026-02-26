@@ -71,6 +71,9 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.compose)
 
+// Retrofit: A library that makes calling HTTP APIs (like https://jsonplaceholder.typicode.com/...) easy.
+// Gson + converter-gson: Converts JSON text from the API into Kotlin objects (and back).
+// Coroutines: Lets us run network calls in the background so the UI doesn’t freeze while waiting for the internet.
     // Networking + JSON + coroutines
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
@@ -81,6 +84,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    // The following line was added to ensure the tooling is available for previews.
+    implementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }

@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<!--
+Allowing the app to use the internet,
+ By default, Android apps are “offline”. This line tells Android:
+“This app is allowed to make network / internet requests.”
+ -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application

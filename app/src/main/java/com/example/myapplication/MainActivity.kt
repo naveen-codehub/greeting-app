@@ -128,13 +128,12 @@ fun GreetingApp(navController: NavHostController) {
 //}
 
     Column(
-
+        // The modifier order is important. First fill the size, then set the background, then apply padding.
         modifier = Modifier
-            .background(Color.Red)
-            .padding(30.dp)
+//            .background(Color.Red)
             .fillMaxSize()
-        .background(Color(0xFFE3F2FD)),
-
+            .background(Color(0xFFE3F2FD))
+            .padding(30.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -172,11 +171,11 @@ fun GreetingApp2(navController: NavHostController, name: String?, dob: String?) 
 
     val context = LocalContext.current
     Column(
+        // The modifier order is important. First fill the size, then set the background, then apply padding.
         modifier = Modifier
-            .background(Color.Red)
-            .padding(30.dp)
-            .fillMaxSize()  // light blue,
-            .background(Color(0xFFE3F2FD)),
+            .fillMaxSize()
+            .background(Color(0xFFE3F2FD))
+            .padding(30.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
